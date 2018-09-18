@@ -51,6 +51,12 @@
                 
             </div>
         </div>
+         <div class="aside-bottom">
+                <Icon type="ios-mail-outline" class="icon"/>
+                <Icon type="ios-calendar-outline" class="icon"/>
+                <Icon type="ios-contacts-outline" class="icon"/>
+                <Icon type="ios-more" class="icon"/>            
+        </div>
     </div>
 </template>
 
@@ -69,9 +75,9 @@ export default {
 }
 .aside-top{
     display:flex;
-    flex:0 1 auto;
     align-items:center;
     height:40px;
+    flex:0 0 auto;
     .icon{
         width:48px;
         height:40px;
@@ -81,7 +87,7 @@ export default {
     }
 }
 .aside-container{
-    flex:1;
+    flex:1 1 auto;
     border: 1px solid #eaeaea;
     .collapse{
         font-size:14px;
@@ -111,6 +117,17 @@ export default {
         }
     }
 }
+    .aside-bottom{
+        display: flex;
+        flex:0 0 auto;
+        align-items: center;
+        height:40px;
+        justify-content:space-around;
+        .icon{
+            font-size:18px;
+        }
+        width:100%;
+    }
 </style>
 
 

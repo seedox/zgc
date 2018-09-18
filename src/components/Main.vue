@@ -1,6 +1,6 @@
 <template>
 <div class="main">
-    <div class="main-top">ee</div>
+    <div class="main-top"></div>
     <div class="main-container">
             <div slot="left" class="split-pane-left">
                 <WorkFlow/>              
@@ -38,12 +38,12 @@ export default {
     width:100%;
     height:40px;
     display:flex;
-    flex:0 1 auto;
+    flex:0 0 auto;
     align-items:center;
 }
 .main-container{
     display:flex;
-    flex-grow:1;
+    flex:1 1 auto;
     border-top:1px solid #eaeaea;
 
 }

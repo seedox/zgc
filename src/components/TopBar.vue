@@ -45,12 +45,15 @@ export default {
 
 <style lang="scss">
 .drawer{
-  display:inline-block;
+  display:flex;
   width:48px;
-  height:48p; 
+  height:48px; 
+  justify-content: center;
+  align-items: center;
   .icon{
     text-align: center;
     cursor:pointer;
+ 
   }
   .panel{
       display:flex;
@@ -84,23 +87,26 @@ export default {
 .top-bar{
   background: #005A9E;
   height:48px;
-  line-height: 48px;
   color:#ffffff;
   display: flex;
+  align-items: center;
   flex: 0 0 auto;
   .logo{
+    display:flex;
+    align-items: center;
     width:220px;
     .app-name{
       margin-left:10px;
     }
-    flex:0 1 auto;
+    flex:0 0 auto;
   }
   .search{
-    flex-grow: 1;
+    flex:1 1 auto;
   }
   .tools{
     display:flex;
-    flex:0 1 240px;
+    flex:0 0 auto;
+    width:240px;
     justify-content: flex-end;
   }
 
